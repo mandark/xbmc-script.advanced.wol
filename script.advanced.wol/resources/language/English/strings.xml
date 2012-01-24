@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <strings>
-    <string id="50000">Ethernet MAC address</string>
-    <string id="50001">IP-Adress or Host-Name</string>
-    <string id="50002">Timeout (seconds)</string>
-    <string id="50003">Wake on XBMC-Start</string>
+    <string id="50000">Ethernet MAC-address</string>
+    <string id="50001">IP-address or hostname</string>
+    <string id="50002">Timeout (in seconds)</string>
+    <string id="50003">Wake on XBMC-start</string>
     <string id="60000">Waking up %hostorip%...</string>
     <string id="60001">Waiting for %hostorip% to wake up...</string>
     <string id="60002">%timecount% of %timeout% seconds</string>

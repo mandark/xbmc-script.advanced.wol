@@ -3,8 +3,22 @@
 import socket, ping, os
 import xbmc, xbmcgui, xbmcaddon
 
+# Read Settings
 settings = xbmcaddon.Addon( id="script.advanced.wol" )
 language  = settings.getLocalizedString
+mac_address = settings.getSetting("macaddress")
+hostorip = settings.getSetting("hostorip")
+timeout = int(settings.getSetting("timeout"))
+
+#if the scrpit was called with a 3rd parameter,
+#use the mac-address and host/ip from there
+try:
+	if (len(sys.argv[3])>0):
+		arrCustomServer = sys.argv[3].split('@')
+		hostorip = arrCustomServer[0]
+		mac_address = arrCustomServer[1]
+except:
+	pass
 
 # Set Icons
 rootDir = settings.getAddonInfo('path')
@@ -14,11 +28,6 @@ iconDir = os.path.join(resDir, 'icons')
 iconConnect = os.path.join(iconDir, 'server_connect.png')
 iconError = os.path.join(iconDir, 'server_error.png')
 iconSuccess = os.path.join(iconDir, 'server.png')
-
-# Read Settings
-mac_address = settings.getSetting("macaddress")
-hostorip = settings.getSetting("hostorip")
-timeout = int(settings.getSetting("timeout"))
 
 launchcommand = False
 delaycommand = False
@@ -33,14 +42,13 @@ except:
 if ((launchcommand == True) & (delaycommand == False)):
 	xbmc.executebuiltin(sys.argv[1])
 
-
+# Send Connection Notification
 xbmc.executebuiltin('XBMC.Notification("'+language(60000).replace("%hostorip%",hostorip)+'","",5000,"'+iconConnect+'")')
 
 # Send WOL-Packet
 xbmc.executebuiltin('XBMC.WakeOnLan("'+mac_address+'")')
 
-
-
+# Check for Ping-Answer
 try:
 	timecount = 1
 	while timecount <= timeout:
