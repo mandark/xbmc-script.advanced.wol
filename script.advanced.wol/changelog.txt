@@ -1,3 +1,6 @@
+[B]1.2.1[/B]
+- Added options to set delay of WOL-signals on wake-on-launch and wake-after-standby (thanks to user "Skyler"!)
+
 [B]1.2.0[/B]
 - Added futher customizability of notification-settings
 - Added options to perform updates of music- and/or video-libraries after a successful wakeup in autostart mode (thanks to user "sw4y"!)

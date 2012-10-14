@@ -5,10 +5,15 @@
 	<string id="51002">IP-address or hostname</string>
 	
 	<string id="54000">Autostart</string>
-    <string id="54001">Wake on XBMC-launch (&quot;Autostart&quot;)</string>
-	<string id="54002">...and update video library after successful wake-up</string>
-	<string id="54003">...and update music library after successful wake-up</string>
-	<string id="54004">Wake after XBMC returns from standby</string>
+	<string id="54010">Wake on XBMC-launch</string>
+    <string id="54011">Activate wake-on-launch</string>
+	<string id="54012">Delay WOL-signal on wake-on-launch (in seconds)</string>
+	<string id="54020">Also wake after XBMC returns from standby</string>
+	<string id="54021">Activate wake-after-standby</string>
+	<string id="54022">Delay WOL-signal on wake-after-standby (in seconds)</string>
+	<string id="54030">Update libraries after succesful wake-on-launch and wake-after-standby</string>
+	<string id="54031">Update video library</string>
+	<string id="54032">Update music library</string>
 	
 	<string id="52000">Notifications</string>
     <string id="52001">Enable launch notification</string>
