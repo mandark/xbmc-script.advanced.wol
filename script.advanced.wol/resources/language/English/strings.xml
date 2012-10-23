@@ -5,6 +5,7 @@
 	<string id="51002">IP-address or hostname</string>
 	
 	<string id="54000">Autostart</string>
+	<string id="54001">NOTE: Changing these settings requires a XBMC-restart to take effect!</string>
 	<string id="54010">Wake on XBMC-launch</string>
     <string id="54011">Activate wake-on-launch</string>
 	<string id="54012">Delay WOL-signal on wake-on-launch (in seconds)</string>

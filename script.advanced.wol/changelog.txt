@@ -1,3 +1,6 @@
+[B]1.2.2[/B]
+- Added help-text in autostart-settings stating that changes require a restart of XBMC to take effect
+
 [B]1.2.1[/B]
 - Added options to set delay of WOL-signals on wake-on-launch and wake-after-standby (thanks to user "Skyler"!)
 
